@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar Example</title>
+</head>
+<body>
+  <script>
+    // Create navbar container
+    const navbar = document.createElement('nav');
+    navbar.style.backgroundColor = '#333';
+    navbar.style.padding = '10px';
+    
+
+    // Create unordered list (ul) to hold navbar items
+    const navList = document.createElement('ul');
+    navList.style.listStyleType = 'none';
+    navList.style.margin = '0';
+    navList.style.padding = '0';
+    navList.style.display = 'flex';
+    navList.style.justifyContent = 'space-between';
+    navList.style.alignItems = 'center';
+
+    // Create navbar items (list items - li) dynamically
+    const navItems = ['Home', 'About', 'Services', 'Contact'];
+
+    navItems.forEach((item) => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.textContent = item;
+      link.style.color = '#fff';
+      link.style.textDecoration = 'none';
+      link.style.padding = '5px';
+
+      listItem.appendChild(link);
+      navList.appendChild(listItem);
+    });
+
+    // Append navbar items to navbar container
+    navbar.appendChild(navList);
+
+    // Add navbar to the document body
+    document.body.appendChild(navbar);
+  </script>
+</body>
+</html>
