@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS for the web series container */
+    .web-series-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+
+    
+    /* CSS for the web series item */
+    .web-series-item {
+      width: 300px;
+      margin: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    /* CSS for the web series item image */
+    .web-series-item img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* CSS for scaling the image on mouseover */
+    .web-series-item:hover img {
+      transform: scale(1.1);
+    }
+
+    body{
+      color: white;
+    }
+  </style>
+</head>
+<body style="background-image: url(dark-theme-background.jpg);">
+  <section class="web-series-container">
+    <figure class="web-series-item">
+      <img src="avengers.jpg" alt="Web Series 1">
+      <figcaption>
+        <h2>Avenger</h2>
+        <p>The Avengers, a group of superheroes, including Iron Man, Captain America, Hulk, Thor, Black Widow, and Hawkeye, join forces to protect the world from threats too big for any one hero to handle.</p>
+        <p>Number of episodes: 10</p>
+        <p>Director: John Doe</p>
+      </figcaption>
+    </figure>
+    <figure class="web-series-item">
+      <img src="lucifer.jpg" alt="Web Series 2">
+      <figcaption>
+        <h2>Lucifer</h2>
+        <p>Lucifer Morningstar, bored and unhappy as the Lord of Hell, abandons his throne and retires to Los Angeles, where he teams up with a detective to solve crime and punish the wicked.</p>
+        <p>Number of episodes: 8</p>
+        <p>Director: Jane Smith</p>
+      </figcaption>
+    </figure>
+    <!-- Add more web series items as needed -->
+  </section>
+</body>
+</html>
